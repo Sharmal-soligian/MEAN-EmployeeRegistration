@@ -1,0 +1,22 @@
+<div class="card m-5">
+  <div class="container">
+  <form [formGroup]="regForm" (ngSubmit)="onReg()">
+    <div class="mb-3">
+      <label for="" class="form-label">Name</label>
+      <input type="text" name="" id="" formControlName="name" class="form-control" placeholder="Enter Name" aria-describedby="helpId">
+    </div>
+    <div class="mb-3">
+      <label for="" class="form-label">Phone</label>
+      <input type="text" name="" id="" formControlName="phone" class="form-control" placeholder="Enter Phone mumber" aria-describedby="helpId">
+    </div>
+    <div class="mb-3">
+      <label for="" class="form-label">Password</label>
+      <input type="password" name="" id="" formControlName="password" class="form-control" placeholder="Enter password" aria-describedby="helpId">
+    </div>
+    <button type="submit" class="btn btn-primary">Register</button>
+  </form>
+  <span [routerLink]="['/login']" class="text-primary" [ngStyle]="{'cursor': 'pointer'}">
+    Already register? Click here
+  </span>
+</div>
+</div>

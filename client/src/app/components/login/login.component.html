@@ -1,0 +1,19 @@
+<div class="card m-5">
+  <div class="container m-2">
+    <form [formGroup]="loginForm" (ngSubmit)="onLog()">
+      <div class="mb-3">
+        <label for="" class="form-label">Name</label>
+        <input type="text" name="" id="" formControlName="name" class="form-control" placeholder="Enter Name" aria-describedby="helpId">
+      </div>
+      <div class="mb-3">
+        <label for="" class="form-label">Password</label>
+        <input type="text" name="" id="" formControlName="password" class="form-control" placeholder="Enter Password" aria-describedby="helpId">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+    <span class="text-primary" [routerLink]="['/register']" [ngStyle]="{'cursor': 'pointer'}">
+      Not registered already? click to signup
+    </span>
+  </div>
+</div>
